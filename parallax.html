@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax練習</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+    body{
+        margin: 0px ;
+        position: relative;
+
+    }
+
+        .pic1{
+            width: 100% ;
+            height: 910px ;
+            background-color: #E4E2DF;
+            background-image: url("./img/Blue\ Mood\ Wallpaper.jpg");
+            background-position: right;
+            background-size: 1300px ;
+            background-repeat: no-repeat;
+            position: relative;
+            background-attachment: fixed;
+        }
+            .box1{
+                width: 390px ;
+                height: 100px ;
+                font-size: 100px ;
+                line-height: 100px ;
+                /* line-height: 927px ; */
+                font-style: oblique;
+                font-weight: bold;
+                text-align: center;
+                /* padding-left: 140px ;
+                box-sizing: border-box; */
+                background-color: #fff;
+                position: absolute;
+                top: calc(50% - 50px) ;
+                left: 350px ;
+                position: relative;
+            }
+            #w{
+                position: absolute;
+                top: -60px ;
+
+            }
+
+        .txt1{
+            width: 100% ;
+            height: 300px ;
+            background-color: rgb(229, 233, 241);
+            text-align: center ;
+            line-height: 50px ;
+            padding: 50px ;
+            box-sizing: border-box;
+            font-size: 30px ;
+            font-style: oblique;
+        }
+        .pic2{
+            width: 100% ;
+            height: 910px ;
+            background-color: #FFFFFF;
+            background-image: url("./img/49562516_603654096745813_720096395671748067_n.jpg");
+            background-position: center ;
+            background-size: contain ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+            #one{
+                position: absolute;
+                top: -60px ;
+            }
+
+            .box2{
+                width: 900px ;
+                height: 100% ;
+                font-size: 90px ;
+                line-height: 1300px ;
+                font-style: oblique;
+                font-weight: bold;
+                padding-left: 140px ;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        .txt2{
+            width: 100% ;
+            height: 400px ;
+            background-color: rgb(229, 233, 241);
+            text-align: center ;
+            line-height: 50px ;
+            padding: 80px ;
+            box-sizing: border-box;
+            font-size: 30px ;
+            font-style: oblique;
+        }
+        .pic3{
+            width: 100% ;
+            height: 910px ;
+            background-color: #FFFFFF;
+            background-image: url("./img/614df88c20aefb39484981a7271c2a61.jpg");
+            background-position: center ;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 700px ;
+            box-sizing: border-box;
+            position: relative;
+        }
+            .box3{
+                width: 1158px ;
+                height: 80px  ;
+                background-color: #FFFFFF;
+                /* line-height: 1455px ; */
+                font-style: oblique;
+                font-weight: bold;
+                margin: auto;
+                font-size: 60px ;
+                text-align: center;
+            }
+            #two{
+                position: absolute;
+                top: -60px ;
+            }
+        .txt3{
+            width: 100% ;
+            height: 200px ;
+            background-color: rgb(229, 233, 241);
+            text-align: center ;
+            line-height: 50px ;
+            padding: 52px ;
+            box-sizing: border-box;
+            font-size: 30px ;
+            font-style: oblique;
+        }        
+        .pic4{
+            width: 100% ;
+            height: 910px ;
+            background-color: #FFFFFF;
+            background-image: url("./img/e2eb4ef56b40ccfe5324f83136821984.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;background-attachment: fixed;
+            position: relative;
+        }
+        .box4{
+                width: 700px ;
+                height: 100% ;
+                /* background-color: cornflowerblue; */
+                line-height: 927px ;
+                font-style: oblique;
+                font-weight: bold;
+                margin: auto;
+                font-size: 100px ;
+                text-align: center;
+                
+            }
+            #c{
+                position: absolute ;
+                top: -60px ;
+            }
+        nav{
+            width: 100% ;
+            height: 60px ;
+            background-color: rgb(229, 233, 241);
+            text-align: center;
+            font-size: 30px ;
+            font-style: oblique ;
+            font-weight: bold ;
+            padding: 11px ;
+            box-sizing: border-box;
+            position: fixed ;
+            top: 0px ;
+            z-index: 1 ;
+
+        }
+        a{
+            margin-left: 300px ;
+            color: gray;
+
+        }
+        a:hover{
+            color: #000 ;
+            text-decoration:#000 ;
+
+        }
+        a.last{
+            margin-right: 300px ;
+        }
+        body{
+            padding-top: 60px ;
+            
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#w">welcome</a><a href="#one">one</a><a href="#two">two</a><a href="#c" class="last">continued</a>
+    </nav>
+
+    <div class="pic1">
+        <div class="box1">
+            <div id="w"></div>
+            Welcome
+        </div>
+    </div>    
+    <div class="txt1">Once when I was six years old I saw a magnificent picture in a book, <br>called
+        True Stories from Nature, <br>about the primeval forest. <br>It was a picture of a boa
+        constrictor in the act of swallowing an animal.</div>
+
+    <div class="pic2">
+        <div id="one"></div>   
+        <div class="box2">Drawing&nbspNumber&nbspOne</div>     
+    </div>
+
+    <div class="txt2">In the book it said: “Boa constrictors swallow their prey whole, without chewing it.
+        <br>After that they are not able to move, and they sleep through the six months that they need for digestion.”
+        <br>I pondered deeply, then, over the adventures of the jungle. 
+        <br>And after some work with a colored pencil I succeeded in making my first drawing.
+        <br>My Drawing Number One.</div>
+
+    <div class="pic3">
+        <div  id="two"></div>   
+        <div class="box3">“Why should any one be frightened by a hat?”</div>
+    </div>
+
+    <div class="txt3">I showed my masterpiece to the grown-ups, and asked them whether the drawing frightened them.
+        <br>But they answered: “Frighten? Why should any one be frightened by a hat?”</div>
+
+    <div class="pic4">
+        <div id="c"></div>
+        <div class="box4">To be continued.</div>
+    </div>
+</body>
+</html>
